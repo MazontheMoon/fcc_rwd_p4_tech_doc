@@ -1,2 +1,4 @@
-# fcc_rwd_p4_tech_doc
-Project 4 of 5 for FreeCodeCamp Responsive Web Design Course - A Technical Documentation page for CSS Selectors
+# FreeCodeCamp_Responsive_Web_Design_Project4_CSS_Selectors_Technical_Documentation_Page
+ Project 4 of 5 for FreeCodeCamp Resposive Web Design
+
+A technical documentation page for the topic of CSS Selectors
