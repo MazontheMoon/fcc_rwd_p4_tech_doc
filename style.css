@@ -4,15 +4,41 @@ Declare variables for page
 :root {
   /*backgrounds, boxes and borders, oh my*/
 
+  /*color scheme*/
+  
+}
+
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab&display=swap');
+
+/*=====================
+Layout
+======================*/
+
+/*2 column layout for main view*/
+
+/*=====================
+Basic Styles 
+======================*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*set global styles*/
+body * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*fallback fonts - never shall Times New Roman be seen again!!!*/
+h1, h2, h3, p, a {
+  font-family: Verdana, sans-serif;
+  margin: 0;
 }
 
 /*=====================
-Basic Styles and Layout
-======================*/
-
-
-/*=====================
-footer
+Footer
 ======================*/
 
 
