@@ -12,7 +12,9 @@
   </head>
 <!--FreeCodeCamp Responsive Web Design project 4-->
 <body>
-  <!--nav menu with page header-->
+  <!--------------------------
+    nav menu with page header
+   --------------------------->
   <nav id="nav-bar">
     <header>
       <h1>Knowing your CSS Selectors</h1>
@@ -44,44 +46,72 @@
       </li>
     </ul>
   </nav>
-  <!--main content-->
+  <!-------------
+   main content
+   -------------->
   <main id="main-doc">
-    <!--section 1 - What’s it all about?-->
+    <!-------------------------------
+     section 1 - What’s it all about?
+     --------------------------------->
     <section class="main-section" id="what_its_all_about">
-      <!--section 1 header-->
+      <!---------------
+      section 1 header
+      ----------------->
       <header>
         <h2>What’s it all about?</h2>
       </header>
-      <!--section 1 content - intro text-->
+      <!----------------------------
+      section 1 content - intro text
+      ----------------------------->
       <p>CSS is used to style the content created in an HTML document, for laying out the items and specifying how they look...if the HTML page is a person's body then the CSS is the clothing.</p>
       <p>This article will show you the different ways you can select your HTML elements to apply the styles to...in other words how you dress up your body to look good!</p>
     </section>
-    <!--section 2 - Do you know?-->
+    <!----------------------
+    section 2 - Do you know?
+    ------------------------>
     <section class="main-section" id="do_you_know">
-      <!--section 2 header-->
+      <!--------------
+      section 2 header
+      ---------------->
       <header>
         <h2>Do you know?</h2>
       </header>
-      <!--section 2 content - intro text-->
+      <!-----------------------------
+      section 2 content - intro text
+      ------------------------------->
       <p>This article won’t really make much sense unless you already have some knowledge of HTML’s semantics…and of course the actual CSS styles to apply to the element you have selected</p>
       <p>But if you know your &lt;p&gt; from a &lt;h1&gt; and &lt;section&gt; from &lt;main&gt; then read on... </p>
     </section>
-    <!--section 3 - Simple Selectors-->
+    <!---------------------------
+    section 3 - Simple Selectors
+    ----------------------------->
     <section class="main-section" id="simple_selectors">
-      <!--section 3 header-->
+      <!--------------
+      section 3 header
+      ---------------->
       <header>
         <h2>Simple Selectors</h2>
       </header>
-      <!--section 3 content - text & four subsections of text-->
+      <!-----------------------------------------------------------------
+      section 3 content - text & four subsections of text & code snippets 
+      ------------------------------------------------------------------>
       <p>Let’s start off simple with the easiest and most basic of them all....the simple selector.</p>
       <p>The style is applied to one or more elements based on the type of element, it’s class, or it's id. Simple eh!</p>
-      <!--subsection 3.1 - Simple Element-->
+      <!-----------------------------
+      subsection 3.1 - Simple Element
+      ------------------------------->
       <article id="simple_element">
-        <!--subsection 3.1 header-->
+        <!-------------------
+        subsection 3.1 header
+        --------------------->
         <h3>Element Selector</h3>
-        <!--subsection 3.1 intro text-->
+        <!-----------------------
+        subsection 3.1 intro text
+         ------------------------>
         <p>The style is applied to every element of that type and is useful for applying page wide or fallback styles</p>
-        <!--subsection 3.1 code example-->
+        <!-------------------------
+        subsection 3.1 code example
+        --------------------------->
         <div class="codebox">
           <p class="code-header">html example:</p>
           <code class="html-snippet">
@@ -95,22 +125,32 @@
             <br>
             p { color: blue }
           </code>
-          <!--subsection 3.1 code display-->
+          <!-------------------------
+          subsection 3.1 code display
+          --------------------------->
           <p class="sandbox-header">The end result is...</p>
           <div class="sandbox">
             <p id="simple_element_sandbox">A paragraph element is normally one of the most commonly occurring elements in any html document</p>
           </div>
         </div>
       </article>
-      <!--subsection 3.2 - Simple Class-->
+      <!---------------------------
+      subsection 3.2 - Simple Class
+      ----------------------------->
       <article id="simple_class">
-        <!--subsection 3.2 header-->
+        <!-------------------
+        subsection 3.2 header
+        --------------------->
         <h3>Class Selector</h3>
-        <!--subsection 3.2 intro text-->
+        <!-----------------------
+        subsection 3.2 intro text
+        -------------------------->
         <p>The class selector consists of a dot (.) followed by a class name (with no spaces in the class name).</p>
         <p>Multiple elements in the document can have the same class name and a single element can have multiple class names (separated by spaces) which makes this selector type useful when applying a style to a variety of different types of elements.
         </p>
-        <!--subsection 3.2 code example-->
+        <!-------------------------
+        subsection 3.2 code example
+        --------------------------->
         <div class="codebox">
           <p class="code-header">html example:</p>
           <code class="html-snippet">
@@ -126,7 +166,9 @@
             <br>
             .box-outline { border: 2px solid black; }
           </code>
-          <!--subsection 3.2 code display-->
+          <!-------------------------
+          subsection 3.2 code display
+          --------------------------->
           <p class="sandbox-header">The end result is...</p>
           <div class="sandbox">
             <p id="simple_class_sandbox">Do I have an outline?
@@ -137,14 +179,22 @@
           <p>In this example each element with the class &quot;box-outline&quot; will have this style applied to it.</p>
         </div>
       </article>
-      <!--subsection 3.3 - Simple ID-->
+      <!------------------------
+      subsection 3.3 - Simple ID
+      -------------------------->
       <article id="simple_id">
-        <!--subsection 3.3 header-->
+        <!-------------------
+        subsection 3.3 header
+        --------------------->
         <h3>ID Selector</h3>
-        <!--subsection 3.3 intro text-->
+        <!-----------------------
+        subsection 3.3 intro text
+        -------------------------->
         <p>The ID selector consists of a hashtag (#) followed by ID name (must be unique) of a given element</p>
         <p>This is different to class styling as multiple html elements can use the same class but only a single element can have an id (There can be only one!)</p>
-        <!--subsection 3.3 code example-->
+        <!-------------------------
+        subsection 3.3 code example
+        --------------------------->
         <div class="codebox">
           <p class="code-header">html example:</p>
           <code class="html-snippet">
@@ -162,7 +212,9 @@
             <br>
             #top-box { background-color: grey; border: 2px dashed black; }
           </code>
-          <!--subsection 3.3 code display-->
+          <!-------------------------
+          subsection 3.3 code display
+          ---------------------------->
           <p class="sandbox-header">The end result is...</p>
           <div class="sandbox">
             <p id="simple_id_sandbox">Description...
@@ -173,29 +225,39 @@
           <p>In this example it is only the element with the id &quot;top-box&quot; that will have this style applied to it.</p>
         </div>
       </article>
-      <!--subsection 3.4 - Simple Universal-->
+      <!-------------------------------
+      subsection 3.4 - Simple Universal
+      --------------------------------->
       <article id="simple_universal">
-        <!--subsection 3.4 header-->
+        <!-------------------
+        subsection 3.4 header
+        ---------------------->
         <h3>Universal Selector</h3>
-        <!--subsection 3.4 intro text-->
+        <!-----------------------
+        subsection 3.4 intro text
+        -------------------------->
         <p>The most simple selector of them all may be the universal selector</p>
         <p>* is the universal selector and is rarely useful by itself but often used in combination with other selectors.
         </p>
-        <!--subsection 3.4 code example-->
+        <!-------------------------
+        subsection 3.4 code example
+        --------------------------->
         <div class="codebox">
           <p class="code-header">html example:</p>
           <code class="html-snippet">
             <span class="code-comment">&lt;!--my list--&gt;</span>
               <br>
               &lt;ul&gt;&lt;li&gt;Listy McListface&lt;/li&gt;&lt;li&gt;Listy McListyFace&lt;/li&gt;&lt;/ul&gt;
-          </code>  
+          </code>
           <p class="code-header">css example:</p>
           <code class="css-snippet">
             <span class="code-comment">/*reset default margins*/</span>
             <br>
             ul *  {  margin: 0; padding: 0; border: 1px dashed grey; }
           </code>
-          <!--subsection 3.4 code display-->
+          <!-------------------------
+          subsection 3.4 code display
+          --------------------------->
           <p class="sandbox-header">The end result is...</p>
           <div class="sandbox">
             <div id="sandbox-universal-style">
@@ -217,45 +279,105 @@
         </div>
       </article>
     </section>
-    <!--section 4 - Attribute Selectors-->
+    <!-----------------------------
+    section 4 - Attribute Selectors
+    ------------------------------->
     <section class="main-section" id="attribute_selectors">
-      <!--section 4 header-->
+      <!--------------
+      section 4 header
+      ---------------->
       <header>
         <h2>Attribute Selectors</h2>
       </header>
-      <!--section 4 content-->
+      <!---------------
+      section 4 content
+      ----------------->
+      <!---------------------
+      section 4 code example
+      ----------------------->
+      <!----------------
+      section 4 sandbox
+      ----------------->
     </section>
-    <!--section 5 - Pseudo Classes-->
+    <!------------------------
+    section 5 - Pseudo Classes
+    -------------------------->
     <section class="main-section" id="pseudo_class">
-      <!--section 5 header-->
+      <!--------------
+      section 5 header
+      ---------------->
       <header>
         <h2>Pseudo Classes</h2>
       </header>
-      <!--section 5 content-->
+      <!---------------
+      section 5 content
+      ----------------->
+      <!---------------------
+      section 5 code example
+      ----------------------->
+      <!----------------
+      section 5 sandbox
+      ----------------->
     </section>
-    <!--section 6 - Pseudo Elements-->
+    <!-------------------------
+    section 6 - Pseudo Elements
+    --------------------------->
     <section class="main-section" id="pseudo_element">
-      <!--section 6 header-->
+      <!---------------
+      section 6 content
+      ----------------->
+      <!---------------------
+      section 6 code example
+      ----------------------->
+      <!----------------
+      section 6 sandbox
+      ----------------->
       <header>
         <h2>Pseudo Elements</h2>
       </header>
-      <!--section 6 content-->
+      <!---------------
+      section 6 content
+      ----------------->
     </section>
-    <!--section 7 - Combinators & Multiple Selectors-->
+    <!------------------------------------------
+    section 7 - Combinators & Multiple Selectors
+    -------------------------------------------->
     <section class="main-section" id="combo_multiple">
-      <!--section 7 header-->
+      <!--------------
+      section 7 header
+      ---------------->
       <header>
         <h2>Combinators &amp; Multiple Selectors</h2>
       </header>
-      <!--section 7 content-->
+      <!---------------
+      section 7 content
+      ----------------->
+      <!---------------------
+      section 7 code example
+      ----------------------->
+      <!----------------
+      section 7 sandbox
+      ----------------->
     </section>
-    <!--section 8 - Best Practices-->
+    <!-------------------------
+    section 8 - Best Practices
+    --------------------------->
     <section class="main-section" id="best_practice">
-      <!--section 8 header-->
+      <!--------------
+      section 8 header
+      ---------------->
       <header>
         <h2>Best Practices</h2>
       </header>
-      <!--section 8 content-->
+      <!---------------
+      section 8 content
+      ----------------->
+      <!---------------------
+      section 8 code example
+      ----------------------->
+      <!----------------
+      section 8 sandbox
+      ----------------->
     </section>
   </main>
   <footer>
