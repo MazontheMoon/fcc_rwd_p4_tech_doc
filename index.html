@@ -92,9 +92,9 @@
       <header>
         <h2>Simple Selectors</h2>
       </header>
-      <!-----------------------------------------------------------------
-      section 3 content - text & four subsections of text & code snippets 
-      ------------------------------------------------------------------>
+      <!------------------------------------------------------------------------
+      section 3 content - intro text & four subsections of text & code snippets 
+      ------------------------------------------------------------------------->
       <p>Let’s start off simple with the easiest and most basic of them all....the simple selector.</p>
       <p>The style is applied to one or more elements based on the type of element, it’s class, or it's id. Simple eh!</p>
       <!-----------------------------
@@ -289,15 +289,80 @@
       <header>
         <h2>Attribute Selectors</h2>
       </header>
-      <!---------------
-      section 4 content
-      ----------------->
-      <!---------------------
-      section 4 code example
-      ----------------------->
-      <!----------------
-      section 4 sandbox
-      ----------------->
+      <!-----------------------------------------------------------------
+      section 4 content - text & two subsections with list & code snippets 
+      ------------------------------------------------------------------>
+      <p>Now that we have warmed up our thinking caps with the easy stuff we can start getting to the more complicated (and therefore oh so much more fun) selectors we can play around with.</p>
+      <p>Attribute selectors match one or more elements based on their attributes/attribute values.</p>
+      <p>The generic syntax consists of square brackets [] containing an attribute name followed by optional condition to match against the value of the attribute (this makes much more sense when you see the examples below).</p>
+      <p>There are two categories of attribute selectors:</p>
+      <ol>
+        <li>Presence and Value</li>
+        <li>Substring Value</li>
+      </ol>
+      <!-------------------------------
+      subsection 4.1 - Presence & Value
+      -------------------------------->
+      <article>
+        <!---------------------------
+        subsection 4.1 title & intro
+        ----------------------------->
+        <h3>Presence and Value</h3>
+        <p>Try to match an exact attribute or attribute value of an element. This will make much more sense when you see the examples below (Well...a bit more sense)</p>
+        <ul>
+          <li>[attr] – this will select all elements with the attribute attr</li>
+          <li>[attr=val] – this will select all elements with the attribute attr but only if attr value is val</li>
+          <li>[attr~=val] – this will select all elements with the attribute attr but only if the value val is one of a space separated list of values for attr</li>
+        </ul>
+        <!-------------------------
+        subsection 4.1 code example
+        --------------------------->
+        <div class="codebox">
+          <p class="code-header">html example:</p>
+          <code class="html-snippet">
+          </code>
+          <p class="code-header">css example:</p>
+          <code class="css-snippet">
+            
+          </code>
+          <!-------------------------
+          subsection 4.1 code display
+          -------------------------->
+          <p class="sandbox-header">The end result is...</p>
+          <div class="sandbox">
+            
+          </div>
+        </div>
+      </article>
+      <!-------------------------------
+      subsection 4.2 - Substring value
+      -------------------------------->
+      <article>
+        <!---------------------------
+        subsection 4.2 title & intro
+        ---------------------------->
+        <h3>Substring Value</h3>
+        <p>The next level to presence and value, this offers flexible matching in a similar fashion to regular expression (also known as <abbr title="Regular Expression">RegExp</abbr>-like selectors)</p>
+        <!-------------------------
+        subsection 4.2 code example
+        --------------------------->
+        <div class="codebox">
+          <p class="code-header">html example:</p>
+          <code class="html-snippet">
+          </code>
+          <p class="code-header">css example:</p>
+          <code class="css-snippet">
+            
+          </code>
+          <!-------------------------
+          subsection 4.1 code display
+          -------------------------->
+          <p class="sandbox-header">The end result is...</p>
+          <div class="sandbox">
+            
+          </div>
+        </div>
+      </article>
     </section>
     <!------------------------
     section 5 - Pseudo Classes
@@ -371,12 +436,6 @@
       </header>
       <!---------------
       section 8 content
-      ----------------->
-      <!---------------------
-      section 8 code example
-      ----------------------->
-      <!----------------
-      section 8 sandbox
       ----------------->
     </section>
   </main>
