@@ -42,7 +42,7 @@ body * {
 }
 
 /*fallback fonts - never shall Times New Roman be seen again!!!*/
-h1, h2, h3, p, a {
+h1, h2, h3, p, a, li {
   font-family: Verdana, sans-serif;
   margin: 0;
 }
