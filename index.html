@@ -311,8 +311,8 @@
         <p>Try to match an exact attribute or attribute value of an element. This will make much more sense when you see the examples below (Well...a bit more sense)</p>
         <ul>
           <li>[attr] – this will select all elements with the attribute attr</li>
-          <li>[attr=val] – this will select all elements with the attribute attr but only if attr value is val</li>
-          <li>[attr~=val] – this will select all elements with the attribute attr but only if the value val is one of a space separated list of values for attr</li>
+          <li>[attr=val] – this will select all elements with the attribute attr but only if attr value is <span class="highlight">val</span></li>
+          <li>[attr~=val] – this will select all elements with the attribute attr but only if the value <span class="highlight">val</span> is one of a space separated list of values for attr</li>
         </ul>
         <!-------------------------
         subsection 4.1 code example
@@ -320,10 +320,11 @@
         <div class="codebox">
           <p class="code-header">html example:</p>
           <code class="html-snippet">
+            <span class="code-comment">&lt;!--my stylish list--&gt;</span>
           </code>
           <p class="code-header">css example:</p>
           <code class="css-snippet">
-            
+            <span class="code-comment">/*Look #1*/</span>
           </code>
           <!-------------------------
           subsection 4.1 code display
@@ -343,19 +344,26 @@
         ---------------------------->
         <h3>Substring Value</h3>
         <p>The next level to presence and value, this offers flexible matching in a similar fashion to regular expression (also known as <abbr title="Regular Expression">RegExp</abbr>-like selectors)</p>
+         <ul>
+          <li>[attr|=val] – this will select elements with the attribute attr for which the value is exactly <span class="highlight">val</span> or starts with val</li>
+          <li>[attr^=val] – this will select all elements with the attribute attr for which the value starts with <span class="highlight">val</span></li>
+          <li>[attr$=val] – this will select all elements with the attribute attr for which the value ends with <span class="highlight">val</span></li>
+           <li>[attr*=val] – this will select all elements with the attribute attr for which the value contains the string <span class="highlight">val</span> (unlike [attr~=val] it does not treat spaces as value separators but as part of attribute name)</li>
+        </ul>
         <!-------------------------
         subsection 4.2 code example
         --------------------------->
         <div class="codebox">
           <p class="code-header">html example:</p>
           <code class="html-snippet">
+            <span class="code-comment">&lt;!--my stylish list--&gt;</span>
           </code>
           <p class="code-header">css example:</p>
           <code class="css-snippet">
-            
+            <span class="code-comment">/*Look #1*/</span>
           </code>
           <!-------------------------
-          subsection 4.1 code display
+          subsection 4.2 code display
           -------------------------->
           <p class="sandbox-header">The end result is...</p>
           <div class="sandbox">
