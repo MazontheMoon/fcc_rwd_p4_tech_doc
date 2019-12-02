@@ -92,9 +92,15 @@
       <header>
         <h2>Simple Selectors</h2>
       </header>
-      <!------------------------------------------------------------------------
+      <!--------------------------------------------------------------------------------------
       section 3 content - intro text & four subsections of text & code snippets 
-      ------------------------------------------------------------------------->
+      ---------------------------------------------------------------------------------------
+      code snippets will be seperated per line using <br> and span classes used for indenting
+      <span class="code-comment"> - used for styling the html or css comment example
+      <span class="code_layout_no_indent"> = first line of code segment with no indent
+      <span class="code_layout_indent1"> = first indent
+      <span class="code_layout_indent2"> = secondary indent
+      --------------------------------------------------------------------------------------->
       <p>Let’s start off simple with the easiest and most basic of them all....the simple selector.</p>
       <p>The style is applied to one or more elements based on the type of element, it’s class, or it's id. Simple eh!</p>
       <!-----------------------------
@@ -117,13 +123,17 @@
           <code class="html-snippet">
             <span class="code-comment">&lt;!--intro section--&gt;</span>
               <br>
-              &lt;p&gt;A paragraph element is normally one of the most commonly occurring elements in any html document&lt;/p&gt;
+              <span class="code_layout_no_indent">&lt;p&gt;A paragraph element is normally one of the most commonly occurring elements in any html document&lt;/p&gt;</span>
           </code>
           <p class="code-header">css example:</p>
           <code class="css-snippet">
             <span class="code-comment">/*All p elements are blue*/</span>
             <br>
-            p { color: blue }
+            <span class="code_layout_no_indent">p {</span>
+            <br>
+            <span class="code_layout_indent1">color: blue</span>
+            <br>
+            <span class="code_layout_no_indent">}</span>
           </code>
           <!-------------------------
           subsection 3.1 code display
@@ -156,15 +166,27 @@
           <code class="html-snippet">
             <span class="code-comment">&lt;!--intro section--&gt;</span>
             <br>
-            &lt;section&gt;&lt;p&gt;Do I have an outline?&lt;/p&gt;&lt;/section&gt;
+            <span class="code_layout_no_indent">&lt;section&gt;</span>
             <br>
-            &lt;section class="box-outline"&gt;&lt;p&gt;Or do I have an outline?&lt;/p&gt;&lt;/section&gt;
+            <span class="code_layout_indent1">&lt;p&gt;Do I have an outline?&lt;/p&gt;</span>
+            <br>
+            <span class="code_layout_no_indent">&lt;/section&gt;</span>
+            <br>
+            <span class="code_layout_no_indent">&lt;section class="box-outline"&gt;</span>
+            <br>
+            <span class="code_layout_indent1">&lt;p&gt;Or do I have an outline?&lt;/p&gt;</span>
+            <br>
+            <span class="code_layout_no_indent">&lt;/section&gt;</span>
           </code>
           <p class="code-header">css example:</p>
           <code class="css-snippet">
             <span class="code-comment">/*Add a solid black border*/</span>
             <br>
-            .box-outline { border: 2px solid black; }
+            <span class="code_layout_no_indent">.box-outline {</span>
+            <br>
+            <span class="code_layout_indent1">border: 2px solid black;</span>
+            <br>
+            <span class="code_layout_no_indent">}</span>
           </code>
           <!-------------------------
           subsection 3.2 code display
@@ -200,17 +222,29 @@
           <code class="html-snippet">
             <span class="code-comment">&lt;!--intro section--&gt;</span>
             <br>
-            &lt;div id="top-box"&gt;&lt;p&gt;Description...&lt;/p&gt;&lt;/div&gt;
+            <span class="code_layout_no_indent">&lt;div id="top-box"&gt;</span>
+            <br>
+            <span class="code_layout_indent1">&lt;p&gt;Description...&lt;/p&gt;</span>
+            <br>
+            <span class="code_layout_no_indent">&lt;/div&gt;</span>
             <br>
             <span class="code-comment">&lt;!--content section--&gt;</span>
             <br>
-            &lt;div id="not-top-box"&gt;&lt;p&gt;Content...&lt;/p&gt;&lt;/div&gt;
+            <span class="code_layout_no_indent">&lt;div id="not-top-box"&gt;</span>
+            <br>
+            <span class="code_layout_indent1">&lt;p&gt;Content...&lt;/p&gt;</span>
+            <br>
+            <span class="code_layout_no_indent">&lt;/div&gt;</span>
           </code>
           <p class="code-header">css example:</p>
           <code class="css-snippet">
             <span class="code-comment">/*styling for first box in form*/</span>
             <br>
-            #top-box { background-color: grey; border: 2px dashed black; }
+            <span class="code_layout_no_indent">#top-box {</span> 
+            <br>
+            <span class="code_layout_indent1">background-color: grey; border: 2px dashed black;</span> 
+            <br>
+            <span class="code_layout_no_indent">}</span>
           </code>
           <!-------------------------
           subsection 3.3 code display
@@ -246,14 +280,26 @@
           <p class="code-header">html example:</p>
           <code class="html-snippet">
             <span class="code-comment">&lt;!--my list--&gt;</span>
-              <br>
-              &lt;ul&gt;&lt;li&gt;Listy McListface&lt;/li&gt;&lt;li&gt;Listy McListyFace&lt;/li&gt;&lt;/ul&gt;
+            <br>
+            <span class="code_layout_no_indent">&lt;ul&gt;</span>
+            <br>
+            <span class="code_layout_indent1">&lt;li&gt;Listy McListface&lt;/li&gt;</span>
+            <br>
+            <span class="code_layout_indent1">&lt;li&gt;Listy McListyFace&lt;/li&gt;</span>
+            <br>
+            <span class="code_layout_no_indent">&lt;/ul&gt;</span>
           </code>
           <p class="code-header">css example:</p>
           <code class="css-snippet">
             <span class="code-comment">/*reset default margins*/</span>
             <br>
-            ul *  {  margin: 0; padding: 0; border: 1px dashed grey; }
+            <span class="code_layout_no_indent">ul *  {</span>
+            <br>
+            <span class="code_layout_indent1">margin: 0; padding: 0;</span>
+            <br>
+            <span class="code_layout_indent1">border: 1px dashed grey;</span>
+            <br>
+            <span class="code_layout_no_indent">}</span>
           </code>
           <!-------------------------
           subsection 3.4 code display
@@ -289,9 +335,15 @@
       <header>
         <h2>Attribute Selectors</h2>
       </header>
-      <!-----------------------------------------------------------------
+      <!-------------------------------------------------------------------------------------
       section 4 content - text & two subsections with list & code snippets 
-      ------------------------------------------------------------------>
+      ---------------------------------------------------------------------------------------
+      code snippets will be seperated per line using <br> and span classes used for indenting
+      <span class="code-comment"> - used for styling the html or css comment example
+      <span class="code_layout_no_indent"> = first line of code segment with no indent
+      <span class="code_layout_indent1"> = first indent
+      <span class="code_layout_indent2"> = secondary indent
+      --------------------------------------------------------------------------------------->
       <p>Now that we have warmed up our thinking caps with the easy stuff we can start getting to the more complicated (and therefore oh so much more fun) selectors we can play around with.</p>
       <p>Attribute selectors match one or more elements based on their attributes/attribute values.</p>
       <p>The generic syntax consists of square brackets [] containing an attribute name followed by optional condition to match against the value of the attribute (this makes much more sense when you see the examples below).</p>
@@ -321,6 +373,13 @@
           <p class="code-header">html example:</p>
           <code class="html-snippet">
             <span class="code-comment">&lt;!--my stylish list--&gt;</span>
+            &lt;ul&gt;
+            <br>
+            &lt;li&gt;No style&lt;/li&gt;
+            <br>
+            &lt;!--Look #1--&gt;
+            <br>
+            &lt;/ul&gt;
           </code>
           <p class="code-header">css example:</p>
           <code class="css-snippet">
@@ -331,7 +390,7 @@
           -------------------------->
           <p class="sandbox-header">The end result is...</p>
           <div class="sandbox">
-            
+
           </div>
         </div>
       </article>
@@ -344,11 +403,11 @@
         ---------------------------->
         <h3>Substring Value</h3>
         <p>The next level to presence and value, this offers flexible matching in a similar fashion to regular expression (also known as <abbr title="Regular Expression">RegExp</abbr>-like selectors)</p>
-         <ul>
+        <ul>
           <li>[attr|=val] – this will select elements with the attribute attr for which the value is exactly <span class="highlight">val</span> or starts with val</li>
           <li>[attr^=val] – this will select all elements with the attribute attr for which the value starts with <span class="highlight">val</span></li>
           <li>[attr$=val] – this will select all elements with the attribute attr for which the value ends with <span class="highlight">val</span></li>
-           <li>[attr*=val] – this will select all elements with the attribute attr for which the value contains the string <span class="highlight">val</span> (unlike [attr~=val] it does not treat spaces as value separators but as part of attribute name)</li>
+          <li>[attr*=val] – this will select all elements with the attribute attr for which the value contains the string <span class="highlight">val</span> (unlike [attr~=val] it does not treat spaces as value separators but as part of attribute name)</li>
         </ul>
         <!-------------------------
         subsection 4.2 code example
@@ -367,7 +426,7 @@
           -------------------------->
           <p class="sandbox-header">The end result is...</p>
           <div class="sandbox">
-            
+
           </div>
         </div>
       </article>
