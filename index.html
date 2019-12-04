@@ -321,7 +321,7 @@
               </ul>
             </div>
           </div>
-          <p class="hot-tip">I use this is when resetting any default padding and margin on the html page itself</p>
+          <p class="hot-tip">I use this is to reset any default padding and margin on the html page itself</p>
         </div>
       </article>
     </section>
@@ -373,17 +373,40 @@
           <p class="code-header">html example:</p>
           <code class="html-snippet">
             <span class="code-comment">&lt;!--my stylish list--&gt;</span>
-            &lt;ul&gt;
+            <span class="code_layout_no_indent">&lt;ul&gt;</span>
             <br>
-            &lt;li&gt;No style&lt;/li&gt;
+            <span class="code_layout_indent1">&lt;li&gt;No style&lt;/li&gt;</span>
             <br>
-            &lt;!--Look #1--&gt;
+            <span class="code_layout_indent1">&lt;!--Look #1--&gt;</span>
             <br>
-            &lt;/ul&gt;
+            <span class="code_layout_no_indent">&lt;/ul&gt;</span>
           </code>
           <p class="code-header">css example:</p>
           <code class="css-snippet">
-            <span class="code-comment">/*Look #1*/</span>
+            <span class="code-comment">/*Look #1 = style for all li elements with a class attribute*/</span>
+            <br>
+            <span class="code_layout_no_indent">li[class] {</span>
+            <br>
+            <span class="code_layout_indent1">font-size: 2rem;</span>
+            <br>
+            <span class="code_layout_no_indent">}</span>
+            <br>
+            <span class="code-comment">/*Look #2 = style for li elements with a class attribute with the value “classy”*/</span>
+            <br>
+            <span class="code_layout_no_indent">li[class=”classy”] {</span>
+            <br>
+            <span class="code_layout_indent1">background-color: grey;</span>
+            <br>
+            <span class="code_layout_no_indent">}</span>
+            <br>
+            <span class="code-comment">/*Look #3 = style for li elements with a class attribute with a value of “class” but only when “class” is not the only value for that attribute - say that five times fast*/</span>
+            <br>
+            <span class="code_layout_no_indent">li[class~=”class”] {</span>
+            <br>
+            <span class="code_layout_indent1">color: purple;</span>
+            <br>
+            <span class="code_layout_no_indent">}</span>
+            <br>
           </code>
           <!-------------------------
           subsection 4.1 code display
