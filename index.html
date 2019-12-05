@@ -413,6 +413,7 @@
           -------------------------->
           <p class="sandbox-header">The end result is...</p>
           <div class="sandbox">
+            <!--To Do - the display of how the sample code snippet examples appear as -->
 
           </div>
         </div>
@@ -439,16 +440,71 @@
           <p class="code-header">html example:</p>
           <code class="html-snippet">
             <span class="code-comment">&lt;!--my stylish list--&gt;</span>
+            <br>
+            <span class="code_layout_no_indent">&lt;ul&gt;</span>
+            <br>
+            <span class="code_layout_indent1">&lt;li&gt;No style&lt;/li&gt;
+</span>
+            <br>
+            <span class="code-comment-indent">&lt;!--Look #4 & #5 & #6 & #7--&gt;</span>
+            <br>
+            <span class="code_layout_indent1">&lt;li class=”class”&gt;Some style&lt;/li&gt;</span>
+            <br>
+            <span class="code-comment-indent">&lt;!--Look #5 & #7--&gt;</span>
+            <br>
+            <span class="code_layout_indent1">&lt;li class=”classy”&gt;More style&lt;/li&gt;</span>
+            <br>
+            <span class="code-comment-indent">&lt;!--Look #5 & #7--&gt;</span>
+            <br>
+            <span class="code_layout_indent1">&lt;li class=”class classless”&gt;More style but not stylish&lt;/li&gt;</span>
+            <br>
+            <span class="code-comment-indent">&lt;!--Look #5 & #6 & #7--&gt;</span>
+            <br>
+            <span class="code_layout_indent1">&lt;li class=”classy classless class”&gt;Style and more style but not stylish&lt;/li&gt;</span>
+            <br>
+            <span class="code_layout_no_indent">&lt;/ul&gt;</span>
           </code>
           <p class="code-header">css example:</p>
           <code class="css-snippet">
-            <span class="code-comment">/*Look #1*/</span>
+            <span class="code-comment">/*Look #4 =  style for all li elements with a class attribute but only if the value is “class”*/</span>
+            <br>
+            <span class="code_layout_no_indent">li[class|=”class”] {</span>
+            <br>
+            <span class="code_layout_indent1">font-size: 2rem;</span>
+            <br>
+            <span class="code_layout_no_indent">}</span>
+            <br>
+            <span class="code-comment">/*Look #5 = style for li elements with a class attribute where the value begins with “class”*/</span>
+            <br>
+            <span class="code_layout_no_indent">li[class^=”class”] {</span>
+            <br>
+            <span class="code_layout_indent1">background-color: grey;</span>
+            <br>
+            <span class="code_layout_no_indent">}</span>
+            <br>
+            <span class="code-comment">/*Look #6 = style for li elements with a class attribute where the value ends with “class”*/</span>
+            <br>
+            <span class="code_layout_no_indent">li[class$=”class”] {</span>
+            <br>
+            <span class="code_layout_indent1">color: purple;</span>
+            <br>
+            <span class="code_layout_no_indent">}</span>
+            <br>
+            <span class="code-comment">/*Look #7 = style for li elements with a class attribute where the value includes “class” anywhere in the string*/</span>
+            <br>
+            <span class="code_layout_no_indent">li[class*=”class”] {</span>
+            <br>
+            <span class="code_layout_indent1">text-decoration: underline;</span>
+            <br>
+            <span class="code_layout_no_indent">}</span>
+            <br>
           </code>
           <!-------------------------
           subsection 4.2 code display
           -------------------------->
           <p class="sandbox-header">The end result is...</p>
           <div class="sandbox">
+            <!--To Do - the display of how the sample code snippet examples appear as -->
 
           </div>
         </div>
@@ -467,12 +523,29 @@
       <!---------------
       section 5 content
       ----------------->
+      <p>If you thought the last section was fun wait till you get a load of the pseudo classes!</p>
+      <p>Pseudo-classes allow you to select one or more elements that exist in a certain state such as mouse hover, or an element that is the first child of its parent in the DOM tree (like the first word in a paragraph, or the first div in an article, etc.)</p>
+      <p>A pseudo-class is a keyword preceded by a colon(:) added to the end of selectors to specify you want to style the selected elements but only when in a certain state such as mouse hover.</p>
       <!---------------------
       section 5 code example
       ----------------------->
-      <!----------------
-      section 5 sandbox
-      ----------------->
+      <div class="codebox">
+        <p class="code-header">html example:</p>
+        <code class="html-snippet">
+          
+        </code>
+        <p class="code-header">css example:</p>
+        <code class="css-snippet">
+          
+        </code>
+      <!---------------------
+      section 5 code display
+      ---------------------->
+      <p class="sandbox-header">The end result is...</p>
+        <div class="sandbox">
+          
+        </div>
+      </div>  
     </section>
     <!-------------------------
     section 6 - Pseudo Elements
