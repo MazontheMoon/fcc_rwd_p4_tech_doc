@@ -222,7 +222,7 @@
           <code class="html-snippet">
             <span class="code_layout_no_indent code-comment">&lt;!--intro section--&gt;</span>
             <br>
-            <span class="code_layout_no_indent">&lt;div id="top-box"&gt;</span>
+            <span class="code_layout_no_indent">&lt;div id=&quot;top-box&quot;&gt;</span>
             <br>
             <span class="code_layout_indent1">&lt;p&gt;Description...&lt;/p&gt;</span>
             <br>
@@ -230,7 +230,7 @@
             <br>
             <span class="code_layout_no_indent code-comment">&lt;!--content section--&gt;</span>
             <br>
-            <span class="code_layout_no_indent">&lt;div id="not-top-box"&gt;</span>
+            <span class="code_layout_no_indent">&lt;div id=&quot;not-top-box&quot;&gt;</span>
             <br>
             <span class="code_layout_indent1">&lt;p&gt;Content...&lt;/p&gt;</span>
             <br>
@@ -391,9 +391,9 @@
             <br>
             <span class="code_layout_no_indent">}</span>
             <br>
-            <span class="code_layout_no_indent code-comment">/*Look #2 = style for li elements with a class attribute with the value “classy”*/</span>
+            <span class="code_layout_no_indent code-comment">/*Look #2 = style for li elements with a class attribute with the value &quot;classy&quot;*/</span>
             <br>
-            <span class="code_layout_no_indent">li[class=”classy”] {</span>
+            <span class="code_layout_no_indent">li[class=&quot;classy&quot;] {</span>
             <br>
             <span class="code_layout_indent1">background-color: grey;</span>
             <br>
@@ -401,7 +401,7 @@
             <br>
             <span class="code_layout_no_indent code-comment">/*Look #3 = style for li elements with a class attribute with a value of “class” but only when “class” is not the only value for that attribute - say that five times fast*/</span>
             <br>
-            <span class="code_layout_no_indent">li[class~=”class”] {</span>
+            <span class="code_layout_no_indent">li[class~=&quot;class&quot;] {</span>
             <br>
             <span class="code_layout_indent1">color: purple;</span>
             <br>
@@ -448,51 +448,51 @@
             <br>
             <span class="code_layout_no_indent code-comment">&lt;!--Look #4 & #5 & #6 & #7--&gt;</span>
             <br>
-            <span class="code_layout_indent1">&lt;li class=”class”&gt;Some style&lt;/li&gt;</span>
+            <span class="code_layout_indent1">&lt;li class=&quot;class&quot;&gt;Some style&lt;/li&gt;</span>
             <br>
             <span class="code_layout_no_indent code-comment">&lt;!--Look #5 & #7--&gt;</span>
             <br>
-            <span class="code_layout_indent1">&lt;li class=”classy”&gt;More style&lt;/li&gt;</span>
+            <span class="code_layout_indent1">&lt;li class=&quot;classy&quot;&gt;More style&lt;/li&gt;</span>
             <br>
             <span class="code_layout_no_indent code-comment">&lt;!--Look #5 & #7--&gt;</span>
             <br>
-            <span class="code_layout_indent1">&lt;li class=”class classless”&gt;More style but not stylish&lt;/li&gt;</span>
+            <span class="code_layout_indent1">&lt;li class=&quot;class classless&quot;&gt;More style but not stylish&lt;/li&gt;</span>
             <br>
             <span class="code_layout_no_indent code-comment">&lt;!--Look #5 & #6 & #7--&gt;</span>
             <br>
-            <span class="code_layout_indent1">&lt;li class=”classy classless class”&gt;Style and more style but not stylish&lt;/li&gt;</span>
+            <span class="code_layout_indent1">&lt;li class=&quot;classy classless class&quot;&gt;Style and more style but not stylish&lt;/li&gt;</span>
             <br>
             <span class="code_layout_no_indent">&lt;/ul&gt;</span>
           </code>
           <p class="code-header">css example:</p>
           <code class="css-snippet">
-            <span class="code_layout_no_indent code-comment">/*Look #4 =  style for all li elements with a class attribute but only if the value is “class”*/</span>
+            <span class="code_layout_no_indent code-comment">/*Look #4 =  style for all li elements with a class attribute but only if the value is &quot;class&quot;*/</span>
             <br>
-            <span class="code_layout_no_indent">li[class|=”class”] {</span>
+            <span class="code_layout_no_indent">li[class|=&quot;class&quot;] {</span>
             <br>
             <span class="code_layout_indent1">font-size: 2rem;</span>
             <br>
             <span class="code_layout_no_indent">}</span>
             <br>
-            <span class="code_layout_no_indent code-comment">/*Look #5 = style for li elements with a class attribute where the value begins with “class”*/</span>
+            <span class="code_layout_no_indent code-comment">/*Look #5 = style for li elements with a class attribute where the value begins with &quot;class&quot;*/</span>
             <br>
-            <span class="code_layout_no_indent">li[class^=”class”] {</span>
+            <span class="code_layout_no_indent">li[class^=&quot;class&quot;] {</span>
             <br>
             <span class="code_layout_indent1">background-color: grey;</span>
             <br>
             <span class="code_layout_no_indent">}</span>
             <br>
-            <span class="code_layout_no_indent code-comment">/*Look #6 = style for li elements with a class attribute where the value ends with “class”*/</span>
+            <span class="code_layout_no_indent code-comment">/*Look #6 = style for li elements with a class attribute where the value ends with &quot;class&quot;*/</span>
             <br>
-            <span class="code_layout_no_indent">li[class$=”class”] {</span>
+            <span class="code_layout_no_indent">li[class$=&quot;class&quot;] {</span>
             <br>
             <span class="code_layout_indent1">color: purple;</span>
             <br>
             <span class="code_layout_no_indent">}</span>
             <br>
-            <span class="code_layout_no_indent code-comment">/*Look #7 = style for li elements with a class attribute where the value includes “class” anywhere in the string*/</span>
+            <span class="code_layout_no_indent code-comment">/*Look #7 = style for li elements with a class attribute where the value includes &quot;class&quot; anywhere in the string*/</span>
             <br>
-            <span class="code_layout_no_indent">li[class*=”class”] {</span>
+            <span class="code_layout_no_indent">li[class*=&quot;class&quot;] {</span>
             <br>
             <span class="code_layout_indent1">text-decoration: underline;</span>
             <br>
@@ -558,14 +558,14 @@
           <br>
           <span class="code_layout_no_indent">}</span>
         </code>
-      <!---------------------
+        <!---------------------
       section 5 code display
       ---------------------->
-      <p class="sandbox-header">The end result is...</p>
+        <p class="sandbox-header">The end result is...</p>
         <div class="sandbox">
-          
+
         </div>
-      </div>  
+      </div>
     </section>
     <!-------------------------
     section 6 - Pseudo Elements
@@ -615,14 +615,14 @@
           <br>
           <span class="code_layout_no_indent">}</span>
         </code>
-      <!---------------------
+        <!---------------------
       section 6 code display
       ---------------------->
-      <p class="sandbox-header">The end result is...</p>
+        <p class="sandbox-header">The end result is...</p>
         <div class="sandbox">
-          
+
         </div>
-      </div> 
+      </div>
     </section>
     <!------------------------------------------
     section 7 - Combinators & Multiple Selectors
@@ -634,15 +634,168 @@
       <header>
         <h2>Combinators &amp; Multiple Selectors</h2>
       </header>
-      <!---------------
-      section 7 content
-      ----------------->
+      <!-----------------------
+      subsection 7.1 Combinators
+      ------------------------->
+      <!-------------------
+      subsection 7.1 title
+      -------------------->
+      <h3>Combinators</h3>
       <!---------------------
-      section 7 code example
+      subsection 7.1 content
+      ---------------------->
+      <p>Not exactly selectors themselves but ways of combining two or more selectors in useful ways for very specific selections, such as only paragraphs that come directly after headings</p>
+      <p>CSS has several ways to select elements based on how they are related to one another:</p>
+      <dl>
+        <dt>Group of selectors (A, B)</dt>
+        <dd>Any element matching A and /or B</dd>
+        <dt>Descendant selector (A B) </dt>
+        <dd>Any element matching B which is a descendant of an element matching A</dd>
+        <dt>Child selector (A > B)</dt>
+        <dd>Any element matching B that is a direct child of an element matching A</dd>
+        <dt>Adjacent sibling selector (A + B)</dt>
+        <dd>Any element matching B that is the next sibling of an element matching A</dd>
+        <dt>General sibling selector (A ~ B)</dt>
+        <dd>Any element matching B that is one of the next siblings of an element matching A</dd>
+      </dl>
+      <!-------------------------
+      subsection 7.1 code example
+      --------------------------->
+      <div class="codebox">
+        <p class="code-header">html example:</p>
+        <code class="html-snippet">
+          <span class="code_layout_no_indent code-comment">&lt;!--my page--&gt;</span>
+          <br>
+          <span class="code_layout_no_indent">&lt;h1&gt;My Sample page&lt;/h1&gt;</span>
+          <br>
+          <span class="code_layout_indent1">&lt;p&gt;This is what my page is about&lt;/p&gt;</span>
+          <br>
+          <span class="code_layout_indent1 code-comment">&lt;!--my nav bar--&gt;</span>
+          <br>
+          <span class="code_layout_indent1">&lt;ul class=&quot;main-nav&quot;&gt;</span>
+          <br>
+          <span class="code_layout_indent2 code-comment">&lt;!--links--&gt;</span>
+          <br>
+          <span class="code_layout_indent2">&lt;li&gt;</span>
+          <br>
+          <span class="code_layout_indent3">&lt;img src=&quot;logo.png&quot;&gt;</span>
+          <br>
+          <span class="code_layout_indent2">&lt;/li&gt;</span>
+          <br>
+          <span class="code_layout_indent2">&lt;li&gt;</span>
+          <br>
+          <span class="code_layout_indent3">&lt;a href=&quot;https://www.freecodecamp.org/learn/&quot;&gt;Learn&lt;a&gt;</span>
+          <br>
+          <span class="code_layout_indent2">&lt;/li&gt;</span>
+          <br>
+          <span class="code_layout_indent2">&lt;li&gt;</span>
+          <br>
+          <span class="code_layout_indent3">&lt;a href=&quot;https://www.freecodecamp.org/news/&quot;&gt;News&lt;a&gt;</span>
+          <br>
+          <span class="code_layout_indent2">&lt;/li&gt;</span>
+          <br>
+          <span class="code_layout_indent2">&lt;li&gt;</span>
+          <br>
+          <span class="code_layout_indent3">&lt;a href=&quot;https://www.freecodecamp.org/forum/&quot;&gt;Forum&lt;a&gt;</span>
+          <br>
+          <span class="code_layout_indent2">&lt;/li&gt;</span>
+          <br>
+          <span class="code_layout_indent2">&lt;li&gt;</span>
+          <br>
+          <span class="code_layout_indent3 code-comment">&lt;!--submenu links--&gt;</span>
+          <br>
+          <span class="code_layout_indent3">&lt;ul class&quot;sub-nav&quot;&gt;</span>
+          <br>
+          <span class="code_layout_indent4">&lt;li&gt;...&lt;/li&gt;</span>
+          <br>
+          <span class="code_layout_indent4">&lt;li&gt;...&lt;/li&gt;</span>
+          <br>
+          <span class="code_layout_indent3">&lt;/ul&gt;</span>
+          <br>
+          <span class="code_layout_indent2">&lt;/li&gt;</span>
+          <br>
+           <span class="code_layout_indent1">&lt;/ul&gt;</span>
+          <br>
+          <span class="code_layout_indent1">&lt;p&gt;This is the rest of my content...&lt;/p&gt;</span>
+          <br>
+        </code>
+        <p class="code-header">css example:</p>
+        <code class="css-snippet">
+          <span class="code_layout_no_indent code-comment">/*All &lt;img&gt; within &lt;li&gt; and/or all &lt;a&gt; within &lt;li&gt;*/</span>
+          <br>
+          <span class="code_layout_no_indent">li img, li a {</span>
+          <br>
+          <span class="code_layout_indent1">border: 2px solid red;</span>
+          <br>
+          <span class="code_layout_no_indent">}</span>
+          <br>
+          <span class="code_layout_no_indent code-comment">/*Any &lt;a&gt; elements within a &lt;li&gt; element*/</span>
+          <br>
+          <span class="code_layout_no_indent">li a {</span>
+          <br>
+          <span class="code_layout_indent1">border: 1px dotted black;</span>
+          <br>
+          <span class="code_layout_no_indent">}</span>
+          <br>
+          <span class="code_layout_no_indent code-comment">/*Any &lt;ul&gt; within a &lt;li&gt; element*/</span>
+          <br>
+          <span class="code_layout_no_indent">li > ul {</span>
+          <br>
+          <span class="code_layout_indent1"> background-color: grey;</span>
+          <br>
+          <span class="code_layout_no_indent">}</span>
+          <br>
+          <span class="code_layout_no_indent code-comment">/*Any &lt;p&gt; element that comes immediately after &lt;h1&gt;*/</span>
+          <br>
+          <span class="code_layout_no_indent">h1 + p  {</span>
+          <br>
+          <span class="code_layout_indent1"> font-size: 1.5rem; </span>
+          <br>
+          <span class="code_layout_no_indent">}</span>
+          <br>
+          <span class="code_layout_no_indent code-comment">/*All &lt;p&gt; that come after &lt;h1&gt;*/</span>
+          <br>
+          <span class="code_layout_no_indent">h1 ~ p  {</span>
+          <br>
+          <span class="code_layout_indent1"> color: darkgrey; </span>
+          <br>
+          <span class="code_layout_no_indent">}</span>
+          <br>
+        </code>
+        <!--------------------------
+      subsection 7.1 code display
+      --------------------------->
+        <p class="sandbox-header">The end result is...</p>
+        <div class="sandbox">
+
+        </div>
+      </div>
+      <!--------------------------------
+      subsection 7.2 Multiple Selectors
+      --------------------------------->
+      <!-----------------
+      section 7.2 title
+      ------------------->
+      <h3>Multiple Selectors</h3>
+      <!-----------------
+      section 7.2 content
+      ------------------->
+      <p>Not separate selectors; the idea is that you can put multiple selectors on the same CSS rule, separated by commas, to apply a single set of declarations to all the elements selected by those selectors</p>
+      <!----------------------
+      section 7.2 code example
       ----------------------->
-      <!----------------
-      section 7 sandbox
-      ----------------->
+      <div class="codebox">
+        <p class="code-header">css example:</p>
+        <code class="css-snippet">
+          <span class="code_layout_no_indent code-comment">/*fallback font style*/</span>
+          <br>
+          <span class="code_layout_no_indent">h1, h2, h3, h4, h5, h6, p, li, a  {</span>
+          <br>
+          <span class="code_layout_indent1">font: italic normal bold normal 1em/1.5 Helvetica, Arial, sans-serif;</span>
+          <br>
+          <span class="code_layout_no_indent">}</span>
+        </code>
+      </div>
     </section>
     <!-------------------------
     section 8 - Best Practices
@@ -652,15 +805,30 @@
       section 8 header
       ---------------->
       <header>
-        <h2>Best Practices</h2>
+        <h2>Best Coding Practice - My rule of 3</h2>
       </header>
       <!---------------
       section 8 content
       ----------------->
+      <ol>
+        <li>Keep it simple - start off with the basics and then evolve the style (Oh believe me, I have learned the hard way about biting off more than you can chew!)</li>
+        <li>Don&apos;t repeat yourself - if all buttons have common styles use a class to apply this style and then target each button for the specific different styling</li>
+        <li>Save yourself the headache of having to revisit (and revisit again) your HTML code by planning out your page first so you can add a class (or id) to your elements as you go along (and don’t forget about your container divs)...</li>
+      </ol>
     </section>
   </main>
   <footer>
-
+    <!--place for disclaimer and boring legal stuff-->
+    <p>This <a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp <span class="fab fa-free-code-camp"></span></a> project is brought to you by <abbr title="HTML5"><span class="fab fa-html5"></span></abbr> and <abbr title="CSS3"><span class="fab fa-css3"></span></abbr></p>
+    <!--Made by Me  - Github, Codepen, LinkedIn in and Wordpress blog for the "making of" article-->
+    <div>
+      <p>Designed by Mary Ronan 2019
+        <a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"></span></a>
+        <a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"></span></a>
+        <a href="https://codepen.io/mazonthemoon/#" target="_blank"> <span class="fab fa-codepen"></span></a>
+        <a href="" target="_blank"> <span class="fab fa-wordpress"></span></a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
