@@ -10,8 +10,8 @@ Web Browser
 
 ## Built With
 
-* [HTML]
-* [CSS]
+* HTML
+* CSS
 
 ## Software
 Brackets
