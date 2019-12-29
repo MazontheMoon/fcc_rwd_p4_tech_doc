@@ -42,10 +42,44 @@ body * {
 }
 
 /*fallback fonts - never shall Times New Roman be seen again!!!*/
-h1, h2, h3, p, a, li {
+h1, h2, h3, p, a, li , dt, dd{
   font-family: Verdana, sans-serif;
-  margin: 0;
 }
+
+/*=====================
+Sandbox example styles
+-----------------------
+1 = Simple - Element
+2 = Simple - ID
+3 = Simple - Class
+4 = Simple - Universal
+5 = Attribute - P&V
+6 = Attribute - Substring
+7 = Pseudo Class
+8 = Pseudo Elements
+9 = Combinators
+10 = Multiple
+======================*/
+
+/*1 = Simple - Element*/
+
+/*2 = Simple - ID*/
+
+/*3 = Simple - Class*/
+
+/*4 = Simple - Universal*/
+
+/*5 = Attribute - P&V*/
+
+/*6 = Attribute - Substring*/
+
+/*7 = Pseudo Class*/
+
+/*8 = Pseudo Elements*/
+
+/*9 = Combinators*/
+
+/*10 = Multiple*/
 
 /*=====================
 Footer
