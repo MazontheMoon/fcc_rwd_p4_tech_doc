@@ -25,6 +25,11 @@ Version #1.1 - initial content
 
 * **Mary Ronan** - [MazOnTheMoon](https://github.com/MazontheMoon)
 
+## Resources
+
+* MDN
+* Font Awesome
+* Google fonts
 
 ## License
 
@@ -33,5 +38,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * FreeCodeCamp
-
-
