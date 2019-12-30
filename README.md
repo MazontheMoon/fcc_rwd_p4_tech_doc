@@ -19,7 +19,7 @@ Web Browser
 
 ## Versioning
 
-Version #1 - initial content
+Version #1.1 - initial content
 
 ## Authors
 
