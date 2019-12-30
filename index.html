@@ -259,7 +259,9 @@ Finding your way around
             <br>
             <span class="code_layout_no_indent">#top-box {</span> 
             <br>
-            <span class="code_layout_indent1">background-color: grey; border: 2px dashed black;</span> 
+            <span class="code_layout_indent1">background-color: grey;</span> 
+            <br>
+            <span class="code_layout_indent1">border: 2px dashed black;</span>
             <br>
             <span class="code_layout_no_indent">}</span>
           </code>
@@ -443,13 +445,10 @@ Finding your way around
           <div class="sandbox">
             <!--the display of how the sample code snippet examples look -->
             <ul>
-              <li>No style</li>
-              <!--Look #1-->
-              <li>Style 1</li>
-              <!--Look #2-->
-              <li>Style 2</li>
-              <!--Look #3-->
-              <li>Style 3</li>
+              <li id="sandbox-attribute-nostyle">No style</li>
+              <li id="sandbox-attribute-style1">Style 1</li>
+              <li id="sandbox-attribute-style2">Style 2</li>
+              <li id="sandbox-attribute-style3">Style 3</li>
             </ul>
           </div>
         </div>
@@ -540,8 +539,14 @@ Finding your way around
           -------------------------->
           <p class="sandbox-header">The end result is...</p>
           <div class="sandbox">
-            <!--To Do - the display of how the sample code snippet examples appear as -->
-
+            <!--the display of how the sample code snippet examples appear as-->
+            <ul>
+              <li>No style</li>
+              <li id="sandbox-attribute-style4">Some style</li>
+              <li id="sandbox-attribute-style5">More style</li>
+              <li id="sandbox-attribute-style6">More style but not stylish</li>
+              <li id="sandbox-attribute-style7">Style and more style but not stylish</li>
+            </ul>
           </div>
         </div>
       </article>
@@ -598,8 +603,13 @@ Finding your way around
       section 5 code display
       ---------------------->
         <p class="sandbox-header">The end result is...</p>
+        <!--the display of how the sample code snippet examples appear as-->
         <div class="sandbox">
-
+          <ul>
+            <li>
+              <a id="sandbox-pseudo-class">Learn</a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -656,7 +666,12 @@ Finding your way around
       ---------------------->
         <p class="sandbox-header">The end result is...</p>
         <div class="sandbox">
-
+          <!--the display of how the sample code snippet examples appear as-->
+          <ul>
+            <li>
+              <a id="sandbox-pseudo-element" href="https://www.freecodecamp.org/learn/">Learn </a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -720,19 +735,19 @@ Finding your way around
           <br>
           <span class="code_layout_indent2">&lt;li&gt;</span>
           <br>
-          <span class="code_layout_indent3">&lt;a href=&quot;https://www.freecodecamp.org/learn/&quot;&gt;Learn&lt;a&gt;</span>
+          <span class="code_layout_indent3">&lt;a href=&quot;https://www.freecodecamp.org/learn/&quot;&gt;Learn&lt;/a&gt;</span>
           <br>
           <span class="code_layout_indent2">&lt;/li&gt;</span>
           <br>
           <span class="code_layout_indent2">&lt;li&gt;</span>
           <br>
-          <span class="code_layout_indent3">&lt;a href=&quot;https://www.freecodecamp.org/news/&quot;&gt;News&lt;a&gt;</span>
+          <span class="code_layout_indent3">&lt;a href=&quot;https://www.freecodecamp.org/news/&quot;&gt;News&lt;/a&gt;</span>
           <br>
           <span class="code_layout_indent2">&lt;/li&gt;</span>
           <br>
           <span class="code_layout_indent2">&lt;li&gt;</span>
           <br>
-          <span class="code_layout_indent3">&lt;a href=&quot;https://www.freecodecamp.org/forum/&quot;&gt;Forum&lt;a&gt;</span>
+          <span class="code_layout_indent3">&lt;a href=&quot;https://www.freecodecamp.org/forum/&quot;&gt;Forum&lt;/a&gt;</span>
           <br>
           <span class="code_layout_indent2">&lt;/li&gt;</span>
           <br>
@@ -740,7 +755,7 @@ Finding your way around
           <br>
           <span class="code_layout_indent3 code-comment">&lt;!--submenu links--&gt;</span>
           <br>
-          <span class="code_layout_indent3">&lt;ul class&quot;sub-nav&quot;&gt;</span>
+          <span class="code_layout_indent3">&lt;ul class=&quot;sub-nav&quot;&gt;</span>
           <br>
           <span class="code_layout_indent4">&lt;li&gt;...&lt;/li&gt;</span>
           <br>
@@ -803,7 +818,30 @@ Finding your way around
       --------------------------->
         <p class="sandbox-header">The end result is...</p>
         <div class="sandbox">
-
+          <!--the display of how the sample code snippet examples appear as-->
+          <h1>My Sample page</h1>
+          <p class="sandbox-combinator-style4">This is what my page is about</p>
+          <ul>
+            <li class="sandbox-combinator-style1">
+              <span class="fab fa-free-code-camp"></span>
+            </li>
+            <li class="sandbox-combinator-style1">
+              <a class="sandbox-combinator-style2" href="https://www.freecodecamp.org/learn/">Learn</a>
+            </li>
+            <li class="sandbox-combinator-style1">
+              <a class="sandbox-combinator-style2" href="https://www.freecodecamp.org/news/">News</a>
+            </li>
+            <li class="sandbox-combinator-style1">
+              <a class="sandbox-combinator-style2" href="https://www.freecodecamp.org/forum/">Forum</a>
+            </li>
+            <li>
+              <ul class="sandbox-combinator-style3">
+                <li>...</li>
+                <li>...</li>
+              </ul>
+            </li>
+          </ul>
+          <p class="sandbox-combinator-style5">This is the rest of my content...</p>
         </div>
       </div>
       <!--------------------------------
