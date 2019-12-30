@@ -14,8 +14,8 @@ Web Browser
 * CSS
 
 ## Software
-Brackets
-CodePen
+* Brackets
+* CodePen
 
 ## Versioning
 
