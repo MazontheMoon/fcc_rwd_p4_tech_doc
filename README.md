@@ -16,6 +16,8 @@ Web Browser
 ## Software
 * Brackets
 * CodePen
+* Google Docs
+* Google Sheets
 
 ## Versioning
 
