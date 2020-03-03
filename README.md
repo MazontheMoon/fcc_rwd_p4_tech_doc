@@ -12,10 +12,12 @@ Web Browser
 
 * HTML
 * CSS
+* Sweat and tears
 
 ## Software
 * Brackets
 * CodePen
+* Github Desktop
 
 ## Versioning
 
@@ -27,9 +29,12 @@ Version #1.1 - initial content
 
 ## Resources
 
+* FreeCodeCamp
 * MDN
+* W3Schools
 * Font Awesome
 * Google fonts
+* Coolors
 
 ## License
 
@@ -38,4 +43,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * FreeCodeCamp
+* FreeCodeCamp forum
+
 
