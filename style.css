@@ -1,18 +1,217 @@
 /*========================
+Finding your way around
+
+1. variables & fonts = line 13
+2. layout
+3. basic styles
+4. section styles
+5. subsection styles
+6. codebox styles
+7. footer
+=========================*/
+
+/*========================
 Declare variables for page
 =========================*/
 :root {
-  /*backgrounds, boxes and borders, oh my*/
+  /*backgrounds and boxes and borders, oh my*/
+
+  /*color scheme*/
+
+  --background: #fff; /*white*/
+  --text: #000; /*black*/
+  --title: #1f363d; /*seaweed green*/
+  --nav: #40798c; /*bluesea*/ 
+  --section: #70a9a1; /*seagreen*/
+  --subsection: #9ec1a3; /*grassy green*/
+  --codebox: #cfe0c3; /*sand*/
 
 }
 
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab&display=swap');
+
 /*=====================
-Basic Styles and Layout
+Layout
 ======================*/
 
+/*2 column layout for main view*/
 
 /*=====================
-footer
+Basic Styles 
+======================*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*set global styles*/
+body * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*fallback fonts - never shall Times New Roman be seen again!!!*/
+h1, h2, h3, p, a, li , dt, dd{
+  font-family: Verdana, sans-serif;
+}
+
+/*=====================
+Sandbox example styles
+-----------------------
+1 = Simple - Element
+2 = Simple - Class
+3 = Simple - ID
+4 = Simple - Universal
+5 = Attribute - P&V
+6 = Attribute - Substring
+7 = Pseudo Class
+8 = Pseudo Elements
+9 = Combinators
+======================*/
+
+/*1 = Simple - Element*/
+
+/*
+#simple_element_sandbox {
+    
+}
+*/
+
+/*2 = Simple - Class*/
+
+/*
+#simple_class_sandbox {
+    
+}
+*/
+
+/*3 = Simple - ID*/
+
+/*
+#simple_id_sandbox {
+    
+}
+*/
+
+/*4 = Simple - Universal*/
+
+/*
+#sandbox-universal-style {
+    
+}
+*/
+
+/*
+#sandbox-universal-nostyle {
+    
+}
+*/
+
+/*5 = Attribute - P&V*/
+
+/*
+#sandbox-attribute-nostyle {
+    
+}
+*/
+
+/*
+#sandbox-attribute-style1 {
+    
+}
+*/
+
+/*
+#sandbox-attribute-style2 {
+    
+}
+*/
+
+/*
+#sandbox-attribute-style3 {
+    
+}
+*/
+
+/*6 = Attribute - Substring*/
+
+/*
+#sandbox-attribute-style4 {
+    
+}
+*/
+
+/*
+#sandbox-attribute-style5 {
+    
+}
+*/
+
+/*
+#sandbox-attribute-style6 {
+    
+}
+*/
+
+/*
+#sandbox-attribute-style7 {
+    
+}
+*/
+
+/*7 = Pseudo Class*/
+
+/*
+#sandbox-pseudo-class {
+    
+}
+*/
+
+
+/*8 = Pseudo Elements*/
+
+/*
+#sandbox-pseudo-element {
+    
+}
+*/
+
+/*9 = Combinators - too many variables to do with id so changing to class for this section*/
+
+/*
+.sandbox-combinator-style1 {
+    
+}
+*/
+
+/*
+.sandbox-combinator-style2 {
+    
+}
+*/
+
+/*
+.sandbox-combinator-style3 {
+    
+}
+*/
+
+/*
+.sandbox-combinator-style4 {
+    
+}
+*/
+
+/*
+.sandbox-combinator-style5 {
+    
+}
+*/
+
+
+/*=====================
+Footer
 ======================*/
 
 
@@ -27,13 +226,11 @@ Media Queries - Responsiveness
 ==============================*/
 
 
-}
 /*=============================
 Accessibility
 ==============================*/
 
 
-}
 
 /*=====================
 Media Queries - Print
