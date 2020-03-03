@@ -1,21 +1,31 @@
 /*========================
 Finding your way around
 
-
-
-
-
-
+1. variables & fonts = line 13
+2. layout
+3. basic styles
+4. section styles
+5. subsection styles
+6. codebox styles
+7. footer
 =========================*/
 
 /*========================
 Declare variables for page
 =========================*/
 :root {
-  /*backgrounds, boxes and borders, oh my*/
+  /*backgrounds and boxes and borders, oh my*/
 
   /*color scheme*/
-  
+
+  --background: #fff; /*white*/
+  --text: #000; /*black*/
+  --title: #1f363d; /*seaweed green*/
+  --nav: #40798c; /*bluesea*/ 
+  --section: #70a9a1; /*seagreen*/
+  --subsection: #9ec1a3; /*grassy green*/
+  --codebox: #cfe0c3; /*sand*/
+
 }
 
 /*import fonts*/
