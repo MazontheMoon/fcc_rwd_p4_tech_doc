@@ -17,7 +17,6 @@ Declare variables for page
   /*backgrounds and boxes and borders, oh my*/
 
   /*color scheme*/
-
   --background: #fff; /*white*/
   --text: #000; /*black*/
   --title: #1f363d; /*seaweed green*/
@@ -25,23 +24,18 @@ Declare variables for page
   --section: #70a9a1; /*seagreen*/
   --subsection: #9ec1a3; /*grassy green*/
   --codebox: #cfe0c3; /*sand*/
-
 }
 
 /*import fonts*/
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab&display=swap');
 
 /*=====================
-Layout
-======================*/
-
-/*2 column layout for main view*/
-
-/*=====================
 Basic Styles 
 ======================*/
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 /*set global styles*/
@@ -56,6 +50,26 @@ h1, h2, h3, p, a, li , dt, dd{
   font-family: Verdana, sans-serif;
 }
 
+/*=====================
+Layout
+======================*/
+/*2 column layout for monitor screen views*/
+body {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+/*positioning of nav bar to be fixed to left side of viewport*/
+nav {
+  margin: 1%;
+}
+
+/*padding and positioning of main content*/
+main {
+  margin: 7.5%;
+}
+
+/*1 column layout for smaller mobile screen views*/
 /*=====================
 Sandbox example styles
 -----------------------
@@ -224,8 +238,17 @@ Little touches
 /*=============================
 Media Queries - Responsiveness
 ==============================*/
-
-
+@media screen and (max-width:768px) {
+/*1 column layout for smaller mobile screen views*/
+  body {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  
+  nav {
+    height: 40vh;
+  }
+}
 /*=============================
 Accessibility
 ==============================*/
@@ -238,6 +261,8 @@ Media Queries - Print
 @media print {
   
   /*Hide unwanted print elements*/
-
+  nav ul {
+    display: none;
+  }
 
 }
