@@ -43,11 +43,17 @@ body * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; 
+  margin: 0;
 }
 
 /*fallback fonts - never shall Times New Roman be seen again!!!*/
 h1, h2, h3, p, a, li , dt, dd{
   font-family: Verdana, sans-serif;
+}
+
+/*Remove default link syling for nav list items*/
+nav ul li {
+  text-decoration: none;
 }
 
 /*=====================
@@ -56,27 +62,33 @@ Layout and positioning
 
 /*2 column layout for monitor screen views*/
 body {
-  display: grid;
-  grid-template-columns: 25% 75%;
-  grid-template-areas:
-    'nav main'
-    'footer footer';
-  grid-gap: 0;
+  position: relative;
 }
 
 /*positioning of nav bar to be fixed to left side of viewport*/
 nav {
-  grid-area: nav;
-  margin: 1%;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 25%;
+  margin-bottom: 30px;
+  border-right: solid 2px var(--nav);
 }
 
+nav ul {
+  list-style: none;
+}
 /*padding and positioning of main content*/
 main {
-  grid-area: main;
-  margin: 7.5%;
-
+padding-left: 25vw;
 }
 
+footer {
+  width: 100vw;
+  padding-left: 25vw;
+  margin:0;
+  background-color: var(--nav);
+}
 /*=====================
 Sandbox example styles
 -----------------------
@@ -259,6 +271,10 @@ Media Queries - Responsiveness
   
   nav {
     height: 40vh;
+  }
+  
+  main {
+    padding-top: 40vh;
   }
 }
 /*=============================
