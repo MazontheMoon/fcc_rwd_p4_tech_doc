@@ -20,7 +20,7 @@ Declare variables for page
   --background: #fff; /*white*/
   --text: #000; /*black*/
   --title: #1f363d; /*seaweed green*/
-  --nav: #40798c; /*bluesea*/ 
+  --nav: #40798c; /*bluesea*/
   --section: #70a9a1; /*seagreen*/
   --subsection: #9ec1a3; /*grassy green*/
   --codebox: #cfe0c3; /*sand*/
@@ -30,24 +30,31 @@ Declare variables for page
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab&display=swap');
 
 /*=====================
-Basic Styles 
+Basic Styles
 ======================*/
-html {
+html, body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  font-size: 14px;
 }
 
 /*set global styles*/
 body * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  margin: 0;
 }
 
 /*fallback fonts - never shall Times New Roman be seen again!!!*/
 h1, h2, h3, p, a, li , dt, dd{
   font-family: Verdana, sans-serif;
+}
+
+/*Remove default link syling for nav list items*/
+nav ul li a{
+  text-decoration: none;
 }
 
 /*=====================
@@ -56,27 +63,44 @@ Layout and positioning
 
 /*2 column layout for monitor screen views*/
 body {
-  display: grid;
-  grid-template-columns: 25% 75%;
-  grid-template-areas:
-    'nav main'
-    'footer footer';
-  grid-gap: 0;
+  position: relative;
 }
 
 /*positioning of nav bar to be fixed to left side of viewport*/
 nav {
-  grid-area: nav;
-  margin: 1%;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 25%;
+  height: 100%;
+  margin-bottom: 3rem;
+  border-right: solid 0.3rem var(--section);
 }
 
+nav ul {
+  list-style: none;
+}
 /*padding and positioning of main content*/
 main {
-  grid-area: main;
-  margin: 7.5%;
-
+margin-left: 25vw;
 }
 
+section {
+  border-top: solid 0.3rem var(--section);
+}
+
+footer {
+  width: 100vw;
+  height: 3rem;
+  margin:0;
+  padding: 0;
+  background-color: var(--section);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
 /*=====================
 Sandbox example styles
 -----------------------
@@ -95,7 +119,7 @@ Sandbox example styles
 
 /*
 #simple_element_sandbox {
-    
+
 }
 */
 
@@ -103,7 +127,7 @@ Sandbox example styles
 
 /*
 #simple_class_sandbox {
-    
+
 }
 */
 
@@ -111,7 +135,7 @@ Sandbox example styles
 
 /*
 #simple_id_sandbox {
-    
+
 }
 */
 
@@ -119,13 +143,13 @@ Sandbox example styles
 
 /*
 #sandbox-universal-style {
-    
+
 }
 */
 
 /*
 #sandbox-universal-nostyle {
-    
+
 }
 */
 
@@ -133,25 +157,25 @@ Sandbox example styles
 
 /*
 #sandbox-attribute-nostyle {
-    
+
 }
 */
 
 /*
 #sandbox-attribute-style1 {
-    
+
 }
 */
 
 /*
 #sandbox-attribute-style2 {
-    
+
 }
 */
 
 /*
 #sandbox-attribute-style3 {
-    
+
 }
 */
 
@@ -159,25 +183,25 @@ Sandbox example styles
 
 /*
 #sandbox-attribute-style4 {
-    
+
 }
 */
 
 /*
 #sandbox-attribute-style5 {
-    
+
 }
 */
 
 /*
 #sandbox-attribute-style6 {
-    
+
 }
 */
 
 /*
 #sandbox-attribute-style7 {
-    
+
 }
 */
 
@@ -185,7 +209,7 @@ Sandbox example styles
 
 /*
 #sandbox-pseudo-class {
-    
+
 }
 */
 
@@ -194,7 +218,7 @@ Sandbox example styles
 
 /*
 #sandbox-pseudo-element {
-    
+
 }
 */
 
@@ -202,31 +226,31 @@ Sandbox example styles
 
 /*
 .sandbox-combinator-style1 {
-    
+
 }
 */
 
 /*
 .sandbox-combinator-style2 {
-    
+
 }
 */
 
 /*
 .sandbox-combinator-style3 {
-    
+
 }
 */
 
 /*
 .sandbox-combinator-style4 {
-    
+
 }
 */
 
 /*
 .sandbox-combinator-style5 {
-    
+
 }
 */
 
@@ -250,15 +274,21 @@ Media Queries - Responsiveness
 @media screen and (max-width:768px) {
 /*1 column layout for smaller mobile screen views*/
   body {
-    grid-template-columns: 100%;
-  grid-template-areas:
-    'nav'
-    'main'
-    'footer';
+
   }
-  
+
   nav {
-    height: 40vh;
+    height: 30vh;
+    width: 100vw;
+    background-color: var(--background);
+    border-bottom: solid 0.3rem var(--section);
+    z-index: 99;
+  }
+
+  main {
+    margin-top: 30vh;
+    margin-left: 0;
+    padding: 5vw;
   }
 }
 /*=============================
@@ -271,7 +301,7 @@ Accessibility
 Media Queries - Print
 ======================*/
 @media print {
-  
+
   /*Hide unwanted print elements*/
   nav ul {
     display: none;
