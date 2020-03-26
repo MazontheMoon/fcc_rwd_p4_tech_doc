@@ -32,10 +32,11 @@ Declare variables for page
 /*=====================
 Basic Styles
 ======================*/
-html {
+html, body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  font-size: 14px;
 }
 
 /*set global styles*/
@@ -52,7 +53,7 @@ h1, h2, h3, p, a, li , dt, dd{
 }
 
 /*Remove default link syling for nav list items*/
-nav ul li {
+nav ul li a{
   text-decoration: none;
 }
 
@@ -71,8 +72,9 @@ nav {
   top:0;
   left:0;
   width: 25%;
-  margin-bottom: 30px;
-  border-right: solid 2px var(--nav);
+  height: 100%;
+  margin-bottom: 3rem;
+  border-right: solid 0.3rem var(--section);
 }
 
 nav ul {
@@ -80,14 +82,24 @@ nav ul {
 }
 /*padding and positioning of main content*/
 main {
-padding-left: 25vw;
+margin-left: 25vw;
+}
+
+section {
+  border-top: solid 0.3rem var(--section);
 }
 
 footer {
   width: 100vw;
-  padding-left: 25vw;
+  height: 3rem;
   margin:0;
-  background-color: var(--nav);
+  padding: 0;
+  background-color: var(--section);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
 }
 /*=====================
 Sandbox example styles
@@ -262,15 +274,21 @@ Media Queries - Responsiveness
 @media screen and (max-width:768px) {
 /*1 column layout for smaller mobile screen views*/
   body {
-    grid-template-columns: 100%;
-  grid-template-areas:
-    'nav'
-    'main'
-    'footer';
+
   }
 
   nav {
-    height: 40vh;
+    height: 30vh;
+    width: 100vw;
+    background-color: var(--background);
+    border-bottom: solid 0.3rem var(--section);
+    z-index: 99;
+  }
+
+  main {
+    margin-top: 30vh;
+    margin-left: 0;
+    padding: 5vw;
   }
 
   main {
