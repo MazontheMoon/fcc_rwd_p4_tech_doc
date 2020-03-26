@@ -290,6 +290,10 @@ Media Queries - Responsiveness
     margin-left: 0;
     padding: 5vw;
   }
+
+  main {
+    padding-top: 40vh;
+  }
 }
 /*=============================
 Accessibility
